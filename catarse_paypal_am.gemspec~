@@ -9,12 +9,12 @@ Gem::Specification.new do |s|
   s.date = "2013-07-15"
   s.description = "PaypalExpress integration with Catarse crowdfunding platform"
   s.email = ["forevertonny@gmail.com"]
-  
+  s.files = [".gitignore", ".gitmodules", ".rspec", "Gemfile", "Gemfile.lock", "MIT-LICENSE", "README.md", "Rakefile", "app/assets/javascripts/catarse_paypal_express.js", "app/assets/javascripts/catarse_paypal_express/paypal_form.js", "app/assets/javascripts/catarse_paypal_express/user_document.js", "app/controllers/.gitkeep", "app/controllers/catarse_paypal_express/payment/paypal_express_controller.rb", "app/views/catarse_paypal_express/payment/paypal_express/review.html.slim", "catarse_paypal_express.gemspec", "config/initializers/active_merchant.rb", "config/initializers/register.rb", "config/locales/en.yml", "config/locales/pt.yml", "config/routes.rb", "lib/catarse_paypal_express.rb", "lib/catarse_paypal_express/engine.rb", "lib/catarse_paypal_express/processors.rb", "lib/catarse_paypal_express/processors/paypal.rb", "lib/catarse_paypal_express/version.rb", "lib/tasks/catarse_paypal_express_tasks.rake", "script/rails", "spec/controllers/catarse_paypal_express/payment/paypal_express_controller_spec.rb", "spec/fixtures/ipn_data.txt", "spec/lib/processors/paypal_spec.rb", "spec/spec_helper.rb", "test/dummy"]
   s.homepage = "http://github.com/am2828/catarse_paypal_am"
   s.require_paths = ["lib"]
   s.rubygems_version = "1.8.11"
   s.summary = "PaypalExpress integration with Catarse - Currency Modified"
-
+  s.test_files = ["spec/controllers/catarse_paypal_express/payment/paypal_express_controller_spec.rb", "spec/fixtures/ipn_data.txt", "spec/lib/processors/paypal_spec.rb", "spec/spec_helper.rb", "test/dummy"]
 
   if s.respond_to? :specification_version then
     s.specification_version = 3
