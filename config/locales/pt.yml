@@ -1,14 +1,14 @@
-pt:
+en:
   projects:
     backers:
       review:
-        paypal: 'Pagamento internacional - PayPal'
+        paypal: 'PayPal'
         international:
-          section_title: 'Você será direcionado para o site do Paypal para completar o pagamento.'
-          user_document_label: 'CPF / CNPJ (somente números) opcional'
-          button: 'Ir para o paypal'
+          section_title: 'You will be directed to the PayPal site to complete payment.'
+          user_document_label: 'CPF / CNPJ'
+          button: 'Redirect to PayPal'
       checkout:
-        paypal_cancel: "Seu pagamento no PayPal foi cancelado. Por favor, tente novamente."
-        paypal_description: "Apoio para o projeto %{project_name} no valor de %{value}"
-        paypal_error: "Ooops. Ocorreu um erro ao enviar seu pagamento para o PayPal. Por favor, tente novamente."
-        success: "Seu apoio foi realizado com sucesso. Muito obrigado!"
+        paypal_cancel: "Your PayPal payment was canceled. Please try again."
+        paypal_description: "Back project %{project_name} with %{value} (MYR)"
+        paypal_error: "Ooops. There was an error while sending your payment to PayPal. Please try again."
+        success: "Your back was successfully made. Thanks a lot!"
