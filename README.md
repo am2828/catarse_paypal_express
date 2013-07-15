@@ -1,4 +1,4 @@
-# CatarsePaypalExpress
+# CatarsePaypalExpress Modified for currency
 
 Catarse paypal express integration with [Catarse](http://github.com/danielweinmann/catarse) crowdfunding platform
 
@@ -6,7 +6,7 @@ Catarse paypal express integration with [Catarse](http://github.com/danielweinma
 
 Add this lines to your Catarse application's Gemfile:
 
-    gem 'catarse_paypal_express'
+    gem 'catarse_paypal_am'
 
 And then execute:
 
@@ -34,7 +34,7 @@ In Rails console, run this:
 
 Clone the repository:
 
-    $ git clone git://github.com/devton/catarse_paypal_express.git
+    $ git clone git://github.com/am2828/catarse_paypal_express.git
 
 Add the catarse code into test/dummy:
 
