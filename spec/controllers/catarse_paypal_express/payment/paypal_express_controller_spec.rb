@@ -2,7 +2,7 @@
 
 require 'spec_helper'
 
-describe CatarsePaypalAm::Payment::PaypalExpressController do
+describe CatarsePaypalExpress::Payment::PaypalExpressController do
   before do
     Configuration.create!(name: "paypal_username", value: "usertest_api1.teste.com")
     Configuration.create!(name: "paypal_password", value: "HVN4PQBGZMHKFVGW")
@@ -99,7 +99,7 @@ describe CatarsePaypalAm::Payment::PaypalExpressController do
         backer = FactoryGirl.create(:backer, user: current_user)
 
         get :pay, { id: backer.id, locale: 'en', use_route: 'catarse_paypal_express' }
-        flash[:failure].should == I18n.t('paypal_error', scope: CatarsePaypalAm::Payment::PaypalExpressController::SCOPE)
+        flash[:failure].should == I18n.t('paypal_error', scope: CatarsePaypalExpress::Payment::PaypalExpressController::SCOPE)
         response.should be_redirect
       end
     end
@@ -144,7 +144,7 @@ describe CatarsePaypalAm::Payment::PaypalExpressController do
         backer = FactoryGirl.create(:backer, user: current_user, payment_token: 'TOKEN')
 
         get :cancel, { id: backer.id, locale: 'en', use_route: 'catarse_paypal_express' }
-        flash[:failure].should == I18n.t('paypal_cancel', scope: CatarsePaypalAm::Payment::PaypalExpressController::SCOPE)
+        flash[:failure].should == I18n.t('paypal_cancel', scope: CatarsePaypalExpress::Payment::PaypalExpressController::SCOPE)
         response.should be_redirect
       end
     end
@@ -200,7 +200,7 @@ describe CatarsePaypalAm::Payment::PaypalExpressController do
 
           get :success, { id: backer.id, PayerID: '123', locale: 'en', use_route: 'catarse_paypal_express' }
 
-          flash[:failure].should == I18n.t('paypal_error', scope: CatarsePaypalAm::Payment::PaypalExpressController::SCOPE)
+          flash[:failure].should == I18n.t('paypal_error', scope: CatarsePaypalExpress::Payment::PaypalExpressController::SCOPE)
           response.should be_redirect
         end
       end

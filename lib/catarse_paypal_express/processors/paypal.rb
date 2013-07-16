@@ -1,4 +1,4 @@
-module CatarsePaypalAm
+module CatarsePaypalExpress
   module Processors
     class Paypal
 

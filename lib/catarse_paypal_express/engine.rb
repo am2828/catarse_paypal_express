@@ -1,6 +1,6 @@
-module CatarsePaypalAm
+module CatarsePaypalExpress
   class Engine < ::Rails::Engine
-    isolate_namespace CatarsePaypalAm
+    isolate_namespace CatarsePaypalExpress
   end
 end
 

@@ -1,4 +1,4 @@
-require 'catarse_paypal_express/processors/paypal'
+require 'catarse_paypal_am/processors/paypal'
 module CatarsePaypalExpress
   module Processors
   end

@@ -42,7 +42,7 @@ GIT
 PATH
   remote: .
   specs:
-    catarse_paypal_express (0.1.0)
+    catarse_paypal_am (0.1.2)
       activemerchant (~> 1.17.0)
       rails (~> 3.2.6)
 
@@ -441,7 +441,7 @@ DEPENDENCIES
   carrierwave (~> 0.7.0)
   catarse_mailchimp!
   catarse_moip!
-  catarse_paypal_express!
+  catarse_paypal_am!
   coffee-rails (~> 3.2.2)
   compass-960-plugin (~> 0.10.4)
   compass-rails (~> 1.0.2)
