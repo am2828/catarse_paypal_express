@@ -200,7 +200,7 @@ describe CatarsePaypalAm::Payment::PaypalExpressController do
 
           get :success, { id: backer.id, PayerID: '123', locale: 'en', use_route: 'catarse_paypal_express' }
 
-          flash[:failure].should == I18n.t('paypal_error', scope: CatarsePaypalAm::Payment::PaypalExpressController::SCOPE)
+          flash[:failure].should == I18n.t('paypal_error', scope: CatarsePaypalExpress::Payment::PaypalExpressController::SCOPE)
           response.should be_redirect
         end
       end

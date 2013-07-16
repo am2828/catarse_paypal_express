@@ -16,7 +16,7 @@ And then execute:
 
 Configure the routes for your Catarse application. Add the following lines in the routes file (config/routes.rb):
 
-    mount CatarsePaypalAm::Engine => "/", :as => "catarse_paypal_express"
+    mount CatarsePaypalExpress::Engine => "/", :as => "catarse_paypal_express"
 
 ### Configurations
 

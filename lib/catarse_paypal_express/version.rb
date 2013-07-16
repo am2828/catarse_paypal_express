@@ -1,3 +1,3 @@
-module CatarsePaypalExpress
-  VERSION = "0.1.0"
+module CatarsePaypalAm
+  VERSION = "0.1.2"
 end

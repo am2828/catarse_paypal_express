@@ -1,4 +1,4 @@
 require "catarse_paypal_express/engine"
 
-module CatarsePaypalAm
+module CatarsePaypalExpress
 end

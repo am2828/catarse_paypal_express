@@ -1,6 +1,6 @@
 require 'catarse_paypal_express/processors'
 
-module CatarsePaypalAm::Payment
+module CatarsePaypalExpress::Payment
   class PaypalExpressController < ApplicationController
     skip_before_filter :verify_authenticity_token, :only => [:notifications, :success]
     skip_before_filter :detect_locale, :only => [:notifications, :success]
